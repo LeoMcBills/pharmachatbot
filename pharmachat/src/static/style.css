@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0d1b2a; 
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: #1b263b; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.chat-history {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: 80%;
+    background-color: #e6e9ef;
+    color: #333;
+}
+
+.chat-message, .user-message {
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    max-width: 80%;
+    color: #000;
+}
+
+.chat-message {
+    background-color: #d1d5db;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #c1e7ff;
+    align-self: flex-end;
+}
+
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+.send-button {
+    background-color: #0061f2;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.send-button:hover {
+    background-color: #0051d4;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.history-button {
+    flex: 1;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.history-button:hover {
+    background-color: #3e8e41;
+}
+
+/* تنسيق حاوية الإدخال بالكامل */
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* تنسيق حاوية User ID و question بحيث تكون بجانب بعضها */
+.user-id-question-container {
+    flex-direction:column;
+    display: flex;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+/* تنسيق حقل User ID */
+.user-id-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+/* تنسيق حقل السؤال */
+.question-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+/* تنسيق زر الإرسال ليظهر بشكل أفضل */
+.send-button {
+    background-color: #0061f2;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.send-button:hover {
+    background-color: #0051d4;
+}
