@@ -1,5 +1,6 @@
 # AI-Powered Pharmacy Chatbot
 
+
 This project is an AI-powered pharmacy assistant chatbot built using **FastAPI**, **LangChain**, **FAISS**, and **SQLite**. The chatbot provides information about medications, including their uses, prices, and availability. Each user session is managed with a **UUID** to uniquely track conversations, ensuring that each user has a separate chat history. The chatbot retrieves relevant drug information using **FAISS** and generates intelligent responses using the **LLama 3** model integrated with **LangChain**.
 
 ## Features
